@@ -8,11 +8,15 @@
 import UIKit
 import Charts
 
-class BarChartViewVC: UIViewController {
-
+class BarChartViewVC: BaseViewController {
+    
+    @IBOutlet weak var barChartView: BarChartView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         print("Here is Bar Chart View")
+        setupNavigationBarStyle(backgroundColor: .systemPink, tintColor: .white, foregroundColor: .white)
+        self.title = "Bar Chart View"
     }
-
+     
 }

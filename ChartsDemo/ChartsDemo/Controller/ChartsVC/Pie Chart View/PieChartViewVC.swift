@@ -8,11 +8,16 @@
 import UIKit
 import Charts
 
-class PieChartViewVC: UIViewController {
+class PieChartViewVC: BaseViewController {
 
+    @IBOutlet weak var pieChartView: PieChartView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         print("Here is Pie Chart View")
+        setupNavigationBarStyle(backgroundColor: .systemPink, tintColor: .white, foregroundColor: .white)
+        self.title = "Pie Chart View"
     }
+    
 
 }

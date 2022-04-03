@@ -8,11 +8,16 @@
 import UIKit
 import Charts
 
-class LineChartViewVC: UIViewController {
+class LineChartViewVC: BaseViewController {
 
+    @IBOutlet weak var lineChartView: LineChartView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         print("Here is Line Chart View")
+        setupNavigationBarStyle(backgroundColor: .systemPink, tintColor: .white, foregroundColor: .white)
+        self.title = "Line Chart View"
     }
+    
 
 }
