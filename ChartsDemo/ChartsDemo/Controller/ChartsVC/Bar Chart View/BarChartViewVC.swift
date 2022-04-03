@@ -70,9 +70,9 @@ class BarChartViewVC: BaseViewController {
         barChartView.xAxis.drawAxisLineEnabled = false // 不顯示 x 軸的線
         barChartView.xAxis.centerAxisLabelsEnabled = false // 讓 x 軸的值置中顯示
         barChartView.xAxis.enabled = false // 取消 x 軸座標
-        barChartView.leftAxis.enabled = true // 取消左側 y 軸座標
+        barChartView.leftAxis.enabled = true // 顯示左側 y 軸座標
         barChartView.leftAxis.drawAxisLineEnabled = false // 不顯示左側 y 軸的線
-        barChartView.leftAxis.drawGridLinesEnabled = true // 取消水平網格線
+        barChartView.leftAxis.drawGridLinesEnabled = true // 顯示水平網格線
         barChartView.rightAxis.enabled = false // 取消右側 y 軸座標
         barChartView.rightAxis.drawAxisLineEnabled = false // 不顯示右側 y 軸的線
     }
