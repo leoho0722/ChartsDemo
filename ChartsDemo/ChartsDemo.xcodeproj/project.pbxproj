@@ -92,7 +92,6 @@
 		D09E6DA627F9819000E88A74 /* ChartsDemo */ = {
 			isa = PBXGroup;
 			children = (
-				D09E6DBB27F982CC00E88A74 /* MainVC */,
 				D09E6DD727F9946D00E88A74 /* Controller */,
 				D09E6DC027F984F100E88A74 /* Support Files */,
 				D09E6DA527F9819000E88A74 /* Products */,
@@ -169,6 +168,7 @@
 		D09E6DD727F9946D00E88A74 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				D09E6DBB27F982CC00E88A74 /* MainVC */,
 				D09E6DC327F9936300E88A74 /* ChartsVC */,
 			);
 			path = Controller;
