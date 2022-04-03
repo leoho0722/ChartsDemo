@@ -12,8 +12,6 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainVC" customModule="ChartsDemo" customModuleProvider="target">
             <connections>
                 <outlet property="chooseChartViewStyleButton" destination="hXU-Bm-h1A" id="cDy-Kc-LPQ"/>
-                <outlet property="mainVCFooterView" destination="2Nt-qs-zWR" id="t7C-Hy-mlR"/>
-                <outlet property="mainVCHeaderView" destination="qXr-62-eaX" id="3U6-9J-aXL"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -22,14 +20,6 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qXr-62-eaX">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="88"/>
-                    <color key="backgroundColor" systemColor="systemGreenColor"/>
-                </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Nt-qs-zWR">
-                    <rect key="frame" x="0.0" y="778" width="375" height="34"/>
-                    <color key="backgroundColor" systemColor="systemGreenColor"/>
-                </view>
                 <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hXU-Bm-h1A">
                     <rect key="frame" x="0.0" y="414" width="375" height="38"/>
                     <state key="normal" title="Button"/>
@@ -45,19 +35,9 @@
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="hXU-Bm-h1A" secondAttribute="trailing" id="2bm-xa-sUg"/>
-                <constraint firstAttribute="bottom" secondItem="2Nt-qs-zWR" secondAttribute="bottom" id="4OU-pp-69C"/>
                 <constraint firstItem="hXU-Bm-h1A" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="8VH-Rh-Lnu"/>
-                <constraint firstItem="qXr-62-eaX" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="9P2-00-Tev"/>
                 <constraint firstItem="hXU-Bm-h1A" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="DNo-2N-QGi"/>
-                <constraint firstAttribute="trailing" secondItem="qXr-62-eaX" secondAttribute="trailing" id="DXw-XH-w0l"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="top" secondItem="qXr-62-eaX" secondAttribute="bottom" id="DfJ-t0-jiv"/>
-                <constraint firstAttribute="trailing" secondItem="2Nt-qs-zWR" secondAttribute="trailing" id="JjY-BA-S6A"/>
-                <constraint firstItem="qXr-62-eaX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Mrf-su-Pqj"/>
-                <constraint firstItem="2Nt-qs-zWR" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="NvB-B0-WZe"/>
-                <constraint firstItem="2Nt-qs-zWR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Uaq-aK-rom"/>
                 <constraint firstItem="hXU-Bm-h1A" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="UzZ-jz-pht"/>
-                <constraint firstItem="2Nt-qs-zWR" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="Vsp-uY-jBi"/>
-                <constraint firstItem="qXr-62-eaX" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="rGP-LI-RUc"/>
             </constraints>
             <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
             <point key="canvasLocation" x="137.68115942028987" y="87.723214285714278"/>
@@ -66,9 +46,6 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
