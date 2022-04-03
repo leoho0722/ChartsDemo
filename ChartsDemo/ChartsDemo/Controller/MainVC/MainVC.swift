@@ -30,7 +30,6 @@ class MainVC: BaseViewController {
                 pushViewController(nextVC)
             }),
             UIAction(title: title[1], image: UIImage(systemName: "chart.bar"), handler: { [self] action in
-                print("Bar Chart View")
                 let nextVC = BarChartViewVC()
                 pushViewController(nextVC)
             }),
