@@ -11,6 +11,7 @@ import Charts
 class LineChartViewVC: BaseViewController {
 
     @IBOutlet weak var lineChartView: LineChartView!
+    @IBOutlet weak var customFooterView: CustomFooterView!
     
     var lineChartViewDataEntries1: [ChartDataEntry] = [] // 折線圖資料陣列
     
@@ -18,7 +19,7 @@ class LineChartViewVC: BaseViewController {
         super.viewDidLoad()
         setupNavigationBarStyle(backgroundColor: .systemPink, tintColor: .white, foregroundColor: .white)
         self.title = "Line Chart View"
-        
+        customFooterView.setBackgroundColor(bgColor: .systemPink)
         setupLineChartView()
     }
     

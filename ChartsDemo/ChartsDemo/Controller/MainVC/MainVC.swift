@@ -10,11 +10,13 @@ import UIKit
 class MainVC: BaseViewController {
     
     @IBOutlet weak var chooseChartViewStyleButton: UIButton!
+    @IBOutlet weak var customFooterView: CustomFooterView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupNavigationBarStyle(backgroundColor: .systemPink, tintColor: .white, foregroundColor: .white)
         self.title = "MainVC"
+        customFooterView.setBackgroundColor(bgColor: .systemPink)
     }
     
     @IBAction func chooseChartViewStyleBtn(_ sender: UIButton) {

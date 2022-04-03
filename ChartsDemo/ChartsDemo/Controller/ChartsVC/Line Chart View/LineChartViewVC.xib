@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LineChartViewVC" customModule="ChartsDemo" customModuleProvider="target">
             <connections>
+                <outlet property="customFooterView" destination="LpT-EQ-dgE" id="bCn-bu-DzS"/>
                 <outlet property="lineChartView" destination="uBa-Pv-CFF" id="pMF-X8-Zxj"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -24,19 +25,28 @@
                     <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LpT-EQ-dgE" customClass="CustomFooterView" customModule="ChartsDemo" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="862" width="414" height="34"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="LpT-EQ-dgE" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="68S-Mk-wo9"/>
+                <constraint firstItem="LpT-EQ-dgE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="9Md-wJ-ac8"/>
                 <constraint firstItem="uBa-Pv-CFF" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="C6Z-vm-kSB"/>
+                <constraint firstAttribute="bottom" secondItem="LpT-EQ-dgE" secondAttribute="bottom" id="JsQ-WH-sYW"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="LpT-EQ-dgE" secondAttribute="trailing" id="TR4-wX-x4v"/>
                 <constraint firstItem="uBa-Pv-CFF" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="bLG-OM-z3y"/>
+                <constraint firstItem="LpT-EQ-dgE" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="d8f-pf-258"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="uBa-Pv-CFF" secondAttribute="bottom" id="fkn-jP-ks0"/>
                 <constraint firstItem="uBa-Pv-CFF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="odv-Ce-gO8"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="uBa-Pv-CFF" secondAttribute="trailing" id="q1X-9f-hxN"/>
                 <constraint firstItem="uBa-Pv-CFF" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="wbw-zi-50x"/>
             </constraints>
             <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
-            <point key="canvasLocation" x="139" y="102"/>
+            <point key="canvasLocation" x="137.68115942028987" y="101.78571428571428"/>
         </view>
     </objects>
     <resources>

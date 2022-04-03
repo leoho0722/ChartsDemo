@@ -11,6 +11,7 @@ import Charts
 class BarChartViewVC: BaseViewController {
     
     @IBOutlet weak var barChartView: BarChartView!
+    @IBOutlet weak var customFooterView: CustomFooterView!
     
     var barChartViewDataEntries1: [BarChartDataEntry] = [] // 長條圖資料陣列
     
@@ -18,7 +19,7 @@ class BarChartViewVC: BaseViewController {
         super.viewDidLoad()
         setupNavigationBarStyle(backgroundColor: .systemPink, tintColor: .white, foregroundColor: .white)
         self.title = "Bar Chart View"
-        
+        customFooterView.setBackgroundColor(bgColor: .systemPink)
         setupBarChartView()
     }
     

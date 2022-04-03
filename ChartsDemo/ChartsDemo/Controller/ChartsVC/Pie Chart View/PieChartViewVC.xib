@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PieChartViewVC" customModule="ChartsDemo" customModuleProvider="target">
             <connections>
+                <outlet property="customFooterView" destination="HAF-Pj-0ae" id="tJI-zI-wid"/>
                 <outlet property="pieChartView" destination="emj-aG-B5w" id="b92-0c-1cR"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -24,19 +25,28 @@
                     <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HAF-Pj-0ae" customClass="CustomFooterView" customModule="ChartsDemo" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="862" width="414" height="34"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="emj-aG-B5w" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="2kY-me-Aea"/>
+                <constraint firstItem="HAF-Pj-0ae" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Act-vY-aSo"/>
+                <constraint firstAttribute="bottom" secondItem="HAF-Pj-0ae" secondAttribute="bottom" id="Ko4-4j-EMF"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="emj-aG-B5w" secondAttribute="trailing" id="P4H-3y-bTg"/>
                 <constraint firstItem="emj-aG-B5w" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="VJd-jl-qA4"/>
+                <constraint firstItem="HAF-Pj-0ae" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="bFM-1A-loA"/>
+                <constraint firstItem="HAF-Pj-0ae" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="h3P-Vu-IAc"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="HAF-Pj-0ae" secondAttribute="trailing" id="jgE-aA-i37"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="emj-aG-B5w" secondAttribute="bottom" id="ssn-w0-qFF"/>
                 <constraint firstItem="emj-aG-B5w" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="vCd-Xw-OH0"/>
                 <constraint firstItem="emj-aG-B5w" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="x18-rN-psu"/>
             </constraints>
             <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
-            <point key="canvasLocation" x="139" y="78"/>
+            <point key="canvasLocation" x="137.68115942028987" y="77.678571428571431"/>
         </view>
     </objects>
     <resources>

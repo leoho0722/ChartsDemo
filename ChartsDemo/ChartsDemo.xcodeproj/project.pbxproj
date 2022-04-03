@@ -20,6 +20,8 @@
 		D09E6DD527F9941200E88A74 /* PieChartViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09E6DD327F9941200E88A74 /* PieChartViewVC.swift */; };
 		D09E6DD627F9941200E88A74 /* PieChartViewVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D09E6DD427F9941200E88A74 /* PieChartViewVC.xib */; };
 		D09E6DD927F996A300E88A74 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09E6DD827F996A300E88A74 /* BaseViewController.swift */; };
+		D09E6DDD27F9FC2400E88A74 /* CustomFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09E6DDB27F9FC2400E88A74 /* CustomFooterView.swift */; };
+		D09E6DDE27F9FC2400E88A74 /* CustomFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D09E6DDC27F9FC2400E88A74 /* CustomFooterView.xib */; };
 		FC3DEC02CF4D135F92B28518 /* Pods_ChartsDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1CCA26517C7B19A09B9BCBE /* Pods_ChartsDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +43,8 @@
 		D09E6DD327F9941200E88A74 /* PieChartViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartViewVC.swift; sourceTree = "<group>"; };
 		D09E6DD427F9941200E88A74 /* PieChartViewVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PieChartViewVC.xib; sourceTree = "<group>"; };
 		D09E6DD827F996A300E88A74 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		D09E6DDB27F9FC2400E88A74 /* CustomFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFooterView.swift; sourceTree = "<group>"; };
+		D09E6DDC27F9FC2400E88A74 /* CustomFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomFooterView.xib; sourceTree = "<group>"; };
 		E1CCA26517C7B19A09B9BCBE /* Pods_ChartsDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChartsDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -94,6 +98,7 @@
 		D09E6DA627F9819000E88A74 /* ChartsDemo */ = {
 			isa = PBXGroup;
 			children = (
+				D09E6DDA27F9FBFD00E88A74 /* View */,
 				D09E6DD727F9946D00E88A74 /* Controller */,
 				D09E6DC027F984F100E88A74 /* Support Files */,
 				D09E6DA527F9819000E88A74 /* Products */,
@@ -177,6 +182,15 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		D09E6DDA27F9FBFD00E88A74 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D09E6DDB27F9FC2400E88A74 /* CustomFooterView.swift */,
+				D09E6DDC27F9FC2400E88A74 /* CustomFooterView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -237,6 +251,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D09E6DDE27F9FC2400E88A74 /* CustomFooterView.xib in Resources */,
 				D09E6DBF27F982E700E88A74 /* MainVC.xib in Resources */,
 				D09E6DB427F9819400E88A74 /* LaunchScreen.storyboard in Resources */,
 				D09E6DCE27F993E100E88A74 /* BarChartViewVC.xib in Resources */,
@@ -301,6 +316,7 @@
 				D09E6DD527F9941200E88A74 /* PieChartViewVC.swift in Sources */,
 				D09E6DAA27F9819000E88A74 /* SceneDelegate.swift in Sources */,
 				D09E6DD927F996A300E88A74 /* BaseViewController.swift in Sources */,
+				D09E6DDD27F9FC2400E88A74 /* CustomFooterView.swift in Sources */,
 				D09E6DCD27F993E100E88A74 /* BarChartViewVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

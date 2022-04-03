@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
@@ -12,16 +12,17 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainVC" customModule="ChartsDemo" customModuleProvider="target">
             <connections>
                 <outlet property="chooseChartViewStyleButton" destination="hXU-Bm-h1A" id="cDy-Kc-LPQ"/>
+                <outlet property="customFooterView" destination="lUJ-oF-pv7" id="phm-r1-0Oa"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" interfaceStyle="light" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hXU-Bm-h1A">
-                    <rect key="frame" x="0.0" y="414" width="375" height="38"/>
+                    <rect key="frame" x="0.0" y="456" width="414" height="38"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="Choose ChartView Style">
                         <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
@@ -30,14 +31,23 @@
                         <action selector="chooseChartViewStyleBtn:" destination="-1" eventType="touchUpInside" id="WEm-6o-cLe"/>
                     </connections>
                 </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lUJ-oF-pv7" customClass="CustomFooterView" customModule="ChartsDemo" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="862" width="414" height="34"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstAttribute="bottom" secondItem="lUJ-oF-pv7" secondAttribute="bottom" id="0gb-eK-bcW"/>
+                <constraint firstItem="lUJ-oF-pv7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="0h3-0W-kSN"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="hXU-Bm-h1A" secondAttribute="trailing" id="2bm-xa-sUg"/>
+                <constraint firstItem="lUJ-oF-pv7" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="8Ai-Gh-skM"/>
                 <constraint firstItem="hXU-Bm-h1A" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="8VH-Rh-Lnu"/>
                 <constraint firstItem="hXU-Bm-h1A" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="DNo-2N-QGi"/>
+                <constraint firstItem="lUJ-oF-pv7" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Mlx-SW-0WP"/>
                 <constraint firstItem="hXU-Bm-h1A" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="UzZ-jz-pht"/>
+                <constraint firstAttribute="trailing" secondItem="lUJ-oF-pv7" secondAttribute="trailing" id="mqJ-FS-w91"/>
             </constraints>
             <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
             <point key="canvasLocation" x="137.68115942028987" y="87.723214285714278"/>

@@ -11,6 +11,7 @@ import Charts
 class PieChartViewVC: BaseViewController {
 
     @IBOutlet weak var pieChartView: PieChartView!
+    @IBOutlet weak var customFooterView: CustomFooterView!
     
     var pieChartViewDataEntries1: [PieChartDataEntry] = [] // 圓餅圖資料陣列
     
@@ -18,7 +19,7 @@ class PieChartViewVC: BaseViewController {
         super.viewDidLoad()
         setupNavigationBarStyle(backgroundColor: .systemPink, tintColor: .white, foregroundColor: .white)
         self.title = "Pie Chart View"
-        
+        customFooterView.setBackgroundColor(bgColor: .systemPink)
         setupPieChartView()
     }
     
