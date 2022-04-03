@@ -34,7 +34,6 @@ class MainVC: BaseViewController {
                 pushViewController(nextVC)
             }),
             UIAction(title: title[2], image: UIImage(systemName: "chart.pie"), handler: { [self] action in
-                print("Pie Chart View")
                 let nextVC = PieChartViewVC()
                 pushViewController(nextVC)
             })
