@@ -19,6 +19,7 @@
 		D09E6DCE27F993E100E88A74 /* BarChartViewVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D09E6DCC27F993E100E88A74 /* BarChartViewVC.xib */; };
 		D09E6DD527F9941200E88A74 /* PieChartViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09E6DD327F9941200E88A74 /* PieChartViewVC.swift */; };
 		D09E6DD627F9941200E88A74 /* PieChartViewVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D09E6DD427F9941200E88A74 /* PieChartViewVC.xib */; };
+		D09E6DD927F996A300E88A74 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09E6DD827F996A300E88A74 /* BaseViewController.swift */; };
 		FC3DEC02CF4D135F92B28518 /* Pods_ChartsDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1CCA26517C7B19A09B9BCBE /* Pods_ChartsDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		D09E6DCC27F993E100E88A74 /* BarChartViewVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BarChartViewVC.xib; sourceTree = "<group>"; };
 		D09E6DD327F9941200E88A74 /* PieChartViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartViewVC.swift; sourceTree = "<group>"; };
 		D09E6DD427F9941200E88A74 /* PieChartViewVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PieChartViewVC.xib; sourceTree = "<group>"; };
+		D09E6DD827F996A300E88A74 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		E1CCA26517C7B19A09B9BCBE /* Pods_ChartsDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChartsDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -168,6 +170,7 @@
 		D09E6DD727F9946D00E88A74 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				D09E6DD827F996A300E88A74 /* BaseViewController.swift */,
 				D09E6DBB27F982CC00E88A74 /* MainVC */,
 				D09E6DC327F9936300E88A74 /* ChartsVC */,
 			);
@@ -297,6 +300,7 @@
 				D09E6DC927F993C700E88A74 /* LineChartViewVC.swift in Sources */,
 				D09E6DD527F9941200E88A74 /* PieChartViewVC.swift in Sources */,
 				D09E6DAA27F9819000E88A74 /* SceneDelegate.swift in Sources */,
+				D09E6DD927F996A300E88A74 /* BaseViewController.swift in Sources */,
 				D09E6DCD27F993E100E88A74 /* BarChartViewVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
