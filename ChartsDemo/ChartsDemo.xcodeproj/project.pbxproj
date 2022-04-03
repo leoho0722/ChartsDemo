@@ -13,6 +13,12 @@
 		D09E6DB427F9819400E88A74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D09E6DB227F9819400E88A74 /* LaunchScreen.storyboard */; };
 		D09E6DBE27F982E700E88A74 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09E6DBC27F982E700E88A74 /* MainVC.swift */; };
 		D09E6DBF27F982E700E88A74 /* MainVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D09E6DBD27F982E700E88A74 /* MainVC.xib */; };
+		D09E6DC927F993C700E88A74 /* LineChartViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09E6DC727F993C700E88A74 /* LineChartViewVC.swift */; };
+		D09E6DCA27F993C700E88A74 /* LineChartViewVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D09E6DC827F993C700E88A74 /* LineChartViewVC.xib */; };
+		D09E6DCD27F993E100E88A74 /* BarChartViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09E6DCB27F993E100E88A74 /* BarChartViewVC.swift */; };
+		D09E6DCE27F993E100E88A74 /* BarChartViewVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D09E6DCC27F993E100E88A74 /* BarChartViewVC.xib */; };
+		D09E6DD527F9941200E88A74 /* PieChartViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09E6DD327F9941200E88A74 /* PieChartViewVC.swift */; };
+		D09E6DD627F9941200E88A74 /* PieChartViewVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D09E6DD427F9941200E88A74 /* PieChartViewVC.xib */; };
 		FC3DEC02CF4D135F92B28518 /* Pods_ChartsDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1CCA26517C7B19A09B9BCBE /* Pods_ChartsDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +33,12 @@
 		D09E6DB527F9819400E88A74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D09E6DBC27F982E700E88A74 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		D09E6DBD27F982E700E88A74 /* MainVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainVC.xib; sourceTree = "<group>"; };
+		D09E6DC727F993C700E88A74 /* LineChartViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartViewVC.swift; sourceTree = "<group>"; };
+		D09E6DC827F993C700E88A74 /* LineChartViewVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LineChartViewVC.xib; sourceTree = "<group>"; };
+		D09E6DCB27F993E100E88A74 /* BarChartViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartViewVC.swift; sourceTree = "<group>"; };
+		D09E6DCC27F993E100E88A74 /* BarChartViewVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BarChartViewVC.xib; sourceTree = "<group>"; };
+		D09E6DD327F9941200E88A74 /* PieChartViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartViewVC.swift; sourceTree = "<group>"; };
+		D09E6DD427F9941200E88A74 /* PieChartViewVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PieChartViewVC.xib; sourceTree = "<group>"; };
 		E1CCA26517C7B19A09B9BCBE /* Pods_ChartsDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChartsDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -81,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				D09E6DBB27F982CC00E88A74 /* MainVC */,
+				D09E6DD727F9946D00E88A74 /* Controller */,
 				D09E6DC027F984F100E88A74 /* Support Files */,
 				D09E6DA527F9819000E88A74 /* Products */,
 			);
@@ -114,6 +127,51 @@
 				D09E6DB227F9819400E88A74 /* LaunchScreen.storyboard */,
 			);
 			path = "Launch Screen";
+			sourceTree = "<group>";
+		};
+		D09E6DC327F9936300E88A74 /* ChartsVC */ = {
+			isa = PBXGroup;
+			children = (
+				D09E6DC427F9938D00E88A74 /* Line Chart View */,
+				D09E6DC527F9939600E88A74 /* Bar Chart View */,
+				D09E6DC627F9939F00E88A74 /* Pie Chart View */,
+			);
+			path = ChartsVC;
+			sourceTree = "<group>";
+		};
+		D09E6DC427F9938D00E88A74 /* Line Chart View */ = {
+			isa = PBXGroup;
+			children = (
+				D09E6DC727F993C700E88A74 /* LineChartViewVC.swift */,
+				D09E6DC827F993C700E88A74 /* LineChartViewVC.xib */,
+			);
+			path = "Line Chart View";
+			sourceTree = "<group>";
+		};
+		D09E6DC527F9939600E88A74 /* Bar Chart View */ = {
+			isa = PBXGroup;
+			children = (
+				D09E6DCB27F993E100E88A74 /* BarChartViewVC.swift */,
+				D09E6DCC27F993E100E88A74 /* BarChartViewVC.xib */,
+			);
+			path = "Bar Chart View";
+			sourceTree = "<group>";
+		};
+		D09E6DC627F9939F00E88A74 /* Pie Chart View */ = {
+			isa = PBXGroup;
+			children = (
+				D09E6DD327F9941200E88A74 /* PieChartViewVC.swift */,
+				D09E6DD427F9941200E88A74 /* PieChartViewVC.xib */,
+			);
+			path = "Pie Chart View";
+			sourceTree = "<group>";
+		};
+		D09E6DD727F9946D00E88A74 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D09E6DC327F9936300E88A74 /* ChartsVC */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,7 +236,10 @@
 			files = (
 				D09E6DBF27F982E700E88A74 /* MainVC.xib in Resources */,
 				D09E6DB427F9819400E88A74 /* LaunchScreen.storyboard in Resources */,
+				D09E6DCE27F993E100E88A74 /* BarChartViewVC.xib in Resources */,
+				D09E6DCA27F993C700E88A74 /* LineChartViewVC.xib in Resources */,
 				D09E6DB127F9819400E88A74 /* Assets.xcassets in Resources */,
+				D09E6DD627F9941200E88A74 /* PieChartViewVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,7 +294,10 @@
 			files = (
 				D09E6DA827F9819000E88A74 /* AppDelegate.swift in Sources */,
 				D09E6DBE27F982E700E88A74 /* MainVC.swift in Sources */,
+				D09E6DC927F993C700E88A74 /* LineChartViewVC.swift in Sources */,
+				D09E6DD527F9941200E88A74 /* PieChartViewVC.swift in Sources */,
 				D09E6DAA27F9819000E88A74 /* SceneDelegate.swift in Sources */,
+				D09E6DCD27F993E100E88A74 /* BarChartViewVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
