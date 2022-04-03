@@ -26,7 +26,6 @@ class MainVC: BaseViewController {
         let title = ["Line Chart", "Bar Chart", "Pie Chart"] // 折線圖、柱狀圖、圓餅圖
         let chartViewMenu = UIMenu(children: [
             UIAction(title: title[0], image: UIImage(systemName: "chart.xyaxis.line"), handler: { [self] action in
-                print("Line Chart View")
                 let nextVC = LineChartViewVC()
                 pushViewController(nextVC)
             }),
