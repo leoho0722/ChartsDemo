@@ -45,7 +45,7 @@ class PieChartViewVC: BaseViewController {
     // MARK: Pie Chart View Configuration
     
     func pieChartViewConfiguration() {
-        // 第一組長條圖資料
+        // 第一組圓餅圖資料
         let chartDataSet1 = PieChartDataSet(entries: pieChartViewDataEntries1, label: "")
         chartDataSet1.colors = [.red, .green, .blue, .orange, .systemPink] // 設定圓餅圖的顏色
         chartDataSet1.valueFont = UIFont.systemFont(ofSize: 17.0) // 設定資料數值的字體大小
